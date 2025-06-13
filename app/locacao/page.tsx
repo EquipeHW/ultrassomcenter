@@ -5,6 +5,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+interface Equipment {
+  name: string;
+  image: string;
+  features: string[];
+}
+
 export default function LocacaoPage() {
   return (
     <div className="min-h-screen">
@@ -46,7 +52,7 @@ export default function LocacaoPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/locacao-hero.jpg"
+                  src="/locacao1.png"
                   alt="Médico utilizando equipamento de ultrassom"
                   fill
                   className="object-cover"
@@ -93,17 +99,17 @@ export default function LocacaoPage() {
                 {[
                   {
                     name: "Toshiba Aplio MX",
-                    image: "/equipamentos/toshiba-aplio-mx.jpg",
+                    image: "/equipamentos/toshibaapliomx.png",
                     features: ["Alta resolução de imagem", "Doppler colorido", "Ideal para exames gerais"],
                   },
                   {
                     name: "Toshiba Xario XG",
-                    image: "/equipamentos/toshiba-xario-xg.jpg",
+                    image: "/equipamentos/toshibaxarioxg.png",
                     features: ["Excelente qualidade de imagem", "Interface intuitiva", "Versatilidade clínica"],
                   },
                   {
                     name: "Toshiba Nemio MX",
-                    image: "/equipamentos/toshiba-nemio-mx.jpg",
+                    image: "/equipamentos/toshibanemiomx.png",
                     features: ["Compacto e portátil", "Fácil operação", "Ótimo custo-benefício"],
                   },
                 ].map((equipment, index) => (
@@ -118,37 +124,37 @@ export default function LocacaoPage() {
                 {[
                   {
                     name: "GE Logiq E",
-                    image: "/equipamentos/ge-logiq-e.jpg",
+                    image: "/equipamentos/gelogiqe.png",
                     features: ["Portátil e compacto", "Alta qualidade de imagem", "Ideal para point-of-care"],
                   },
                   {
                     name: "GE Logiq C5",
-                    image: "/equipamentos/ge-logiq-c5.jpg",
+                    image: "/equipamentos/gelogiqc5.png",
                     features: ["Excelente custo-benefício", "Imagens nítidas", "Fácil operação"],
                   },
                   {
                     name: "GE Logiq P5",
-                    image: "/equipamentos/ge-logiq-p5.jpg",
+                    image: "/equipamentos/gelogiqp5.png",
                     features: ["Versatilidade clínica", "Doppler avançado", "Excelente resolução"],
                   },
                   {
                     name: "GE Logiq P6",
-                    image: "/equipamentos/ge-logiq-p6.jpg",
+                    image: "/equipamentos/gelogiqp6.png",
                     features: ["Alta performance", "Tecnologia avançada", "Múltiplas aplicações"],
                   },
                   {
-                    name: "GE Logiq F8",
-                    image: "/equipamentos/ge-logiq-f8.jpg",
+                    name: "GE Logiq F6",
+                    image: "/equipamentos/gelogiqf6.png",
                     features: ["Excelente qualidade de imagem", "Interface intuitiva", "Ampla gama de transdutores"],
                   },
                   {
                     name: "GE Logiq P3",
-                    image: "/equipamentos/ge-logiq-p3.jpg",
+                    image: "/equipamentos/logiqp3.png",
                     features: ["Compacto", "Fácil operação", "Ótimo para clínicas menores"],
                   },
                   {
                     name: "GE Voluson E6",
-                    image: "/equipamentos/ge-voluson-e6.jpg",
+                    image: "/equipamentos/gevolusone6.png",
                     features: ["Especializado em obstetrícia", "Imagens 3D/4D", "Alta tecnologia"],
                   },
                 ].map((equipment, index) => (
@@ -163,17 +169,17 @@ export default function LocacaoPage() {
                 {[
                   {
                     name: "Philips HD7",
-                    image: "/equipamentos/philips-hd7.jpg",
+                    image: "/equipamentos/philipshd7.png",
                     features: ["Excelente qualidade de imagem", "Fácil operação", "Versatilidade clínica"],
                   },
                   {
-                    name: "Philips Affiniti 50",
-                    image: "/equipamentos/philips-affiniti-50.jpg",
+                    name: "Philips Affiniti 30",
+                    image: "/equipamentos/philipsaffiniti30.png",
                     features: ["Alta performance", "Tecnologia avançada", "Excelente ergonomia"],
                   },
                   {
                     name: "Philips HD11",
-                    image: "/equipamentos/philips-hd11.jpg",
+                    image: "/equipamentos/philipshd11.png",
                     features: ["Imagens de alta definição", "Ampla gama de aplicações", "Confiabilidade"],
                   },
                 ].map((equipment, index) => (
@@ -188,12 +194,12 @@ export default function LocacaoPage() {
                 {[
                   {
                     name: "Medison Sonoace X8",
-                    image: "/equipamentos/medison-sonoace-x8.jpg",
+                    image: "/equipamentos/medisonsonoacex8.png",
                     features: ["Alta resolução de imagem", "Doppler colorido avançado", "Interface intuitiva"],
                   },
                   {
                     name: "Medison Accuvix V10",
-                    image: "/equipamentos/medison-accuvix-v10.jpg",
+                    image: "/equipamentos/medisonaccuvixv10.png",
                     features: ["Tecnologia 3D/4D", "Excelente qualidade de imagem", "Múltiplas aplicações"],
                   },
                 ].map((equipment, index) => (
@@ -208,17 +214,17 @@ export default function LocacaoPage() {
                 {[
                   {
                     name: "Samsung H60",
-                    image: "/equipamentos/samsung-h60.jpg",
+                    image: "/equipamentos/samsungh60.png",
                     features: ["Alta tecnologia", "Excelente qualidade de imagem", "Interface moderna"],
                   },
                   {
                     name: "Samsung Accuvix XG",
-                    image: "/equipamentos/samsung-accuvix-xg.jpg",
+                    image: "/equipamentos/samsungaccuvixxg.png",
                     features: ["Imagens de alta definição", "Doppler avançado", "Ergonomia superior"],
                   },
                   {
                     name: "Samsung R7",
-                    image: "/equipamentos/samsung-r7.jpg",
+                    image: "/equipamentos/samsungr7.png",
                     features: ["Tecnologia de ponta", "Imagens cristalinas", "Múltiplas aplicações clínicas"],
                   },
                 ].map((equipment, index) => (
@@ -340,15 +346,7 @@ export default function LocacaoPage() {
                 Solicitar Orçamento
               </Button>
             </Link>
-            <Link href="/contato">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-semibold px-8"
-              >
-                Fale Conosco
-              </Button>
-            </Link>
+      
           </div>
         </div>
       </section>
@@ -357,7 +355,7 @@ export default function LocacaoPage() {
 }
 
 // Equipment Card Component
-function EquipmentCard({ equipment }) {
+function EquipmentCard({ equipment }: { equipment: Equipment }) {
   return (
     <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="relative h-64 w-full">
@@ -371,7 +369,7 @@ function EquipmentCard({ equipment }) {
       <CardContent className="p-6">
         <h3 className="text-xl font-bold mb-4 text-gray-800">{equipment.name}</h3>
         <ul className="space-y-2 mb-6">
-          {equipment.features.map((feature, index) => (
+          {equipment.features.map((feature: string, index: number) => (
             <li key={index} className="flex items-start gap-2">
               <span className="text-red-600 font-bold">•</span>
               <span className="text-gray-600">{feature}</span>
