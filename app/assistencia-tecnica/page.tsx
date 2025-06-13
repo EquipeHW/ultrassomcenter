@@ -41,7 +41,7 @@ export default function AssistenciaTecnicaPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/assistencia-tecnica-hero.jpg"
+                  src="/assistencia.png"
                   alt="Manutenção de equipamentos de ultrassom"
                   fill
                   className="object-cover"
@@ -94,9 +94,9 @@ export default function AssistenciaTecnicaPage() {
 
             {/* Right Content - Image */}
             <div className="relative">
-              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/assistencia-tecnica-detail.jpg"
+                  src="/assistencia2.png"
                   alt="Laboratório de manutenção de equipamentos"
                   fill
                   className="object-cover"
@@ -159,7 +159,7 @@ export default function AssistenciaTecnicaPage() {
             {/* Left Content - Image */}
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/teste-qualidade.jpg" alt="Teste de Controle de Qualidade" fill className="object-cover" />
+                <Image src="/assistencia2.png" alt="Teste de Controle de Qualidade" fill className="object-cover" />
               </div>
             </div>
 
@@ -263,7 +263,7 @@ export default function AssistenciaTecnicaPage() {
             {/* Right Content - Image */}
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/teste-seguranca.jpg" alt="Teste de Segurança Elétrica" fill className="object-cover" />
+                <Image src="/assistencia2.png" alt="Teste de Segurança Elétrica" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -278,7 +278,7 @@ export default function AssistenciaTecnicaPage() {
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/manutencao-preventiva.jpg"
+                  src="/assistencia2.png"
                   alt="Manutenção Preventiva Especializada"
                   fill
                   className="object-cover"
@@ -346,98 +346,6 @@ export default function AssistenciaTecnicaPage() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <Card className="shadow-lg">
-              <CardContent className="p-6">
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="nome" className="text-sm font-medium text-gray-700">
-                        Nome Completo
-                      </label>
-                      <input
-                        type="text"
-                        id="nome"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        placeholder="Seu nome"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                        E-mail
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        placeholder="seu@email.com"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="telefone" className="text-sm font-medium text-gray-700">
-                        Telefone
-                      </label>
-                      <input
-                        type="tel"
-                        id="telefone"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        placeholder="(11) 99999-9999"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="servico" className="text-sm font-medium text-gray-700">
-                        Serviço Desejado
-                      </label>
-                      <select
-                        id="servico"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        required
-                      >
-                        <option value="">Selecione um serviço</option>
-                        <option value="teste-qualidade">Teste de Controle de Qualidade</option>
-                        <option value="teste-seguranca">Teste de Segurança Elétrica</option>
-                        <option value="manutencao-preventiva">Manutenção Preventiva</option>
-                        <option value="outro">Outro</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="equipamento" className="text-sm font-medium text-gray-700">
-                      Equipamento (Marca/Modelo)
-                    </label>
-                    <input
-                      type="text"
-                      id="equipamento"
-                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Ex: GE Logiq P5"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="mensagem" className="text-sm font-medium text-gray-700">
-                      Mensagem
-                    </label>
-                    <textarea
-                      id="mensagem"
-                      rows={4}
-                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Descreva sua necessidade em detalhes"
-                    ></textarea>
-                  </div>
-
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 text-lg">
-                    Enviar Solicitação
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
@@ -454,15 +362,7 @@ export default function AssistenciaTecnicaPage() {
                 Entre em Contato
               </Button>
             </Link>
-            <Link href="/locacao">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-semibold px-8"
-              >
-                Ver Opções de Locação
-              </Button>
-            </Link>
+          
           </div>
         </div>
       </section>

@@ -44,9 +44,7 @@ export function Header() {
               <Link href="/assistencia-tecnica" className="text-white hover:text-red-400 transition-colors font-medium">
                 Assistência Técnica
               </Link>
-              <Link href="/contato" className="text-white hover:text-red-400 transition-colors font-medium">
-                Contato
-              </Link>
+            
               <Link href="/locacao" className="text-white hover:text-red-400 transition-colors font-medium">
                 Locação
               </Link>
