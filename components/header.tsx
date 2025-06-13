@@ -24,13 +24,13 @@ export function Header() {
       {/* Main Header */}
       <header className="bg-gray-700/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
-                <Image src="/logo-icon.png" alt="UltrassomCenter" width={32} height={32} className="w-8 h-8" />
+              <div className="flex items-center justify-center">
+                <Image src="/logo.png" alt="UltrassomCenter" width={200} height={60} className="w-48 h-20" />
               </div>
-              <span className="text-white text-xl font-bold">ULTRASSOMCENTER</span>
+            
             </Link>
 
             {/* Desktop Navigation */}

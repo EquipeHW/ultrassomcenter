@@ -51,9 +51,9 @@ export default function EmpresaPage() {
 
             {/* Right Content - Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-md h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/empresa-hero.jpg"
+                  src="/sobre.png"
                   alt="Profissional utilizando equipamento de ultrassom"
                   fill
                   className="object-cover"
@@ -73,7 +73,7 @@ export default function EmpresaPage() {
             <div className="relative">
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/sobre-nos-collage.jpg"
+                  src="/sobre2.png"
                   alt="Equipamentos e profissionais de ultrassom"
                   fill
                   className="object-cover"
@@ -131,7 +131,7 @@ export default function EmpresaPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 text-white">
             {[
               {
                 icon: <Target className="h-12 w-12" />,
@@ -153,7 +153,7 @@ export default function EmpresaPage() {
               },
             ].map((value, index) => (
               <Card key={index} className="bg-white/10 border-none backdrop-blur-sm text-center">
-                <CardContent className="p-8">
+                <CardContent className="p-8 text-white ">
                   <div className="flex justify-center mb-6 text-white">{value.icon}</div>
                   <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
                   <p className="text-red-100">{value.description}</p>
@@ -224,13 +224,7 @@ export default function EmpresaPage() {
               </Button>
             </Link>
             <Link href="/locacao">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-semibold px-8"
-              >
-                Ver Locação
-              </Button>
+           
             </Link>
           </div>
         </div>

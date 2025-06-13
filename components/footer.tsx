@@ -1,10 +1,11 @@
 import { MapPin, Phone, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
     <footer className="bg-red-600 text-white py-12">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Endereço */}
           <div className="flex items-start gap-4">
             <MapPin className="h-6 w-6 text-white mt-1 flex-shrink-0" />
@@ -32,6 +33,20 @@ export function Footer() {
             <div>
               <h3 className="font-bold text-lg mb-2">E-mail</h3>
               <p className="text-white/90">ultrassomcenter@gmail.com</p>
+            </div>
+          </div>
+
+          {/* Desenvolvido por */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Desenvolvido por</h3>
+            <div className="flex items-center">
+              <Image
+                src="/logo02.png"
+                alt="HW Logo"
+                width={120}
+                height={60}
+                className="h-14 w-auto"
+              />
             </div>
           </div>
         </div>
