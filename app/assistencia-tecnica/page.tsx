@@ -27,7 +27,7 @@ export default function AssistenciaTecnicaPage() {
                 </p>
               </div>
 
-              <a 
+              <Link 
                 href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function AssistenciaTecnicaPage() {
                 >
                   Solicite seu orçamento
                 </Button>
-              </a>
+              </Link>
             </div>
 
             {/* Right Content - Image */}
@@ -146,13 +146,13 @@ export default function AssistenciaTecnicaPage() {
                   <div className="flex justify-center mb-6 text-red-600">{service.icon}</div>
                   <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
-                  <a 
+                  <Link 
                     href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
-                  </a>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -211,13 +211,13 @@ export default function AssistenciaTecnicaPage() {
               </div>
 
               <div className="mt-8">
-                <a 
+                <Link 
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -266,13 +266,13 @@ export default function AssistenciaTecnicaPage() {
               </div>
 
               <div className="mt-8">
-                <a 
+                <Link 
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -341,13 +341,13 @@ export default function AssistenciaTecnicaPage() {
               </div>
 
               <div className="mt-8">
-                <a 
+                <Link 
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -377,7 +377,7 @@ export default function AssistenciaTecnicaPage() {
             Conte com nossa equipe especializada para manter seus equipamentos de ultrassom funcionando perfeitamente
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <Link 
               href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
@@ -385,7 +385,7 @@ export default function AssistenciaTecnicaPage() {
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-8">
                 Entre em Contato
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

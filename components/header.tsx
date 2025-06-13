@@ -52,13 +52,13 @@ export function Header() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <a 
+              <Link 
                 href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button className="bg-green-500 hover:bg-green-600 text-white font-medium px-6">Fale Conosco</Button>
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -106,13 +106,14 @@ export function Header() {
                 >
                   Locação
                 </Link>
-                <a 
+                <Link 
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   <Button className="bg-green-500 hover:bg-green-600 text-white font-medium w-fit">Fale Conosco</Button>
-                </a>
+                </Link>
               </nav>
             </div>
           )}

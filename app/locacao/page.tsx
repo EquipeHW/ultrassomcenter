@@ -32,13 +32,13 @@ export default function LocacaoPage() {
 
               <div className="space-y-4 mb-8 text-red-100">
                 <p className="text-lg">
-                  Nosé aluga equipamentos com rapidez e sem burocracia, com contratos de curto, médio e longo prazo, de
+                  Nós alugamos equipamentos com rapidez e sem burocracia, com contratos de curto, médio e longo prazo, de
                   acordo com seu funcionamento ou necessidade. Equipamentos de última geração! Possibilidade de locação
                   por hora, por exame ou contrato fixo.
                 </p>
               </div>
 
-              <a 
+              <Link 
                 href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function LocacaoPage() {
                 >
                   Solicite seu Orçamento
                 </Button>
-              </a>
+              </Link>
             </div>
 
             {/* Right Content - Image */}
@@ -345,7 +345,7 @@ export default function LocacaoPage() {
             ultrassom
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <Link 
               href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
@@ -353,7 +353,7 @@ export default function LocacaoPage() {
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-8">
                 Solicitar Orçamento
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -383,13 +383,13 @@ function EquipmentCard({ equipment }: { equipment: Equipment }) {
             </li>
           ))}
         </ul>
-        <a 
+        <Link 
           href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Solicite seu orçamento</Button>
-        </a>
+        </Link>
       </CardContent>
     </Card>
   )
