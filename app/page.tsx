@@ -58,7 +58,11 @@ export default function HomePage() {
                     Ver Nossos Serviços
                   </Button>
                 </Link>
-                <Link href="/contato">
+                <a 
+                  href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     size="lg"
                     variant="outline"
@@ -66,7 +70,7 @@ export default function HomePage() {
                   >
                     Fale Conosco
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -159,14 +163,18 @@ export default function HomePage() {
                     {/* CTA Footer */}
                     <div className="p-6 pt-0">
                       <div className="border-t border-gray-200 pt-4">
-                        <Link href="/contato">
+                        <a 
+                          href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all">
                             <span className="flex items-center justify-center gap-2">
                               <span>💬</span>
                               Fale Conosco
                             </span>
                           </Button>
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </CardContent>
@@ -273,12 +281,28 @@ export default function HomePage() {
             Entre em contato conosco e encontre a solução ideal para suas necessidades.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contato">
+            <a 
+              href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-medium px-8">
                 Fale Conosco
               </Button>
-            </Link>
-           
+            </a>
+            <a 
+              href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 font-medium px-8"
+              >
+                (11) 91743-3834
+              </Button>
+            </a>
           </div>
         </div>
       </section>
