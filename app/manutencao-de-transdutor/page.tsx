@@ -9,13 +9,24 @@ export default function ManutencaoTransdutorPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 py-16 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/transdutor-banner.png"
+            alt="Banner de transdutor"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/20 rounded-full blur-3xl -translate-y-48 translate-x-48"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-red-400/30 rounded-full blur-2xl translate-y-32 -translate-x-32"></div>
 
         <div className="container mx-auto px-4 py-16 relative z-10 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content */}
+          <div className="max-w-2xl">
+            {/* Content */}
             <div className="text-white space-y-8">
               <Badge className="bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm px-4 py-2 text-sm">
                 Serviço Especializado
@@ -41,16 +52,6 @@ export default function ManutencaoTransdutorPage() {
                     SOLICITE SEU ORÇAMENTO
                   </Button>
                 </a>
-                <a href="https://wa.me/5511917433834" target="_blank" rel="noopener noreferrer">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-6 rounded-xl backdrop-blur-sm text-lg"
-                  >
-                    <span className="mr-2">FALE NO WHATSAPP</span>
-                    <span className="text-xl">📱</span>
-                  </Button>
-                </a>
               </div>
 
               <div className="flex items-center gap-4 pt-4">
@@ -69,26 +70,6 @@ export default function ManutencaoTransdutorPage() {
                   </div>
                 </div>
                 <span className="text-red-100 text-sm">Atendemos todas as principais marcas</span>
-              </div>
-            </div>
-
-            {/* Right Content - Image */}
-            <div className="flex justify-center lg:justify-end relative">
-              <div className="relative w-full max-w-md h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-200 via-red-100 to-red-200 opacity-30"></div>
-                <Image
-                  src="/transdutor-hero.png"
-                  alt="Transdutor de ultrassom"
-                  fill
-                  className="object-contain p-8"
-                  priority
-                />
-              </div>
-
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white text-red-600 px-6 py-3 rounded-xl shadow-xl font-bold flex items-center gap-2">
-                <span className="text-2xl">⚡</span>
-                <span>Atendimento Rápido</span>
               </div>
             </div>
           </div>
@@ -163,7 +144,7 @@ export default function ManutencaoTransdutorPage() {
             <div className="relative">
               <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/maintenance-contract.png"
+                  src="/manutenção.png"
                   alt="Técnico realizando manutenção em transdutor"
                   fill
                   className="object-cover"
@@ -241,7 +222,7 @@ export default function ManutencaoTransdutorPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all w-40 h-40 flex items-center justify-center">
-              <Image src="/brands/ge.png" alt="GE" width={100} height={100} className="object-contain" />
+              <Image src="/brands/1.png" alt="GE" width={100} height={100} className="object-contain" />
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all w-40 h-40 flex items-center justify-center">
               <Image src="/brands/philips.png" alt="Philips" width={100} height={100} className="object-contain" />
@@ -312,8 +293,8 @@ export default function ManutencaoTransdutorPage() {
 
             {/* Right Content - Image */}
             <div className="relative">
-              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/transesophageal.png" alt="Transdutor Transesofágico" fill className="object-contain p-8" />
+              <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-xl">
+                <Image src="/transdutor1.png" alt="Transdutor Transesofágico" fill className="object-contain p-8 rounded-3xl" />
               </div>
             </div>
           </div>
@@ -364,7 +345,7 @@ export default function ManutencaoTransdutorPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative">
                 <Image
-                  src="/about-1.jpg"
+                  src="/assistencia.png"
                   alt="Equipe técnica"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -372,7 +353,7 @@ export default function ManutencaoTransdutorPage() {
               </div>
               <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative">
                 <Image
-                  src="/about-2.jpg"
+                  src="/assistencia2.png"
                   alt="Laboratório"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -380,7 +361,7 @@ export default function ManutencaoTransdutorPage() {
               </div>
               <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative">
                 <Image
-                  src="/about-3.jpg"
+                  src="/locacao1.png"
                   alt="Equipamentos"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -388,7 +369,7 @@ export default function ManutencaoTransdutorPage() {
               </div>
               <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative">
                 <Image
-                  src="/about-4.jpg"
+                  src="/locacao2.png"
                   alt="Atendimento"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -399,191 +380,7 @@ export default function ManutencaoTransdutorPage() {
         </div>
       </section>
 
-      {/* Request Quote Form */}
-      <section id="solicitar-orcamento" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Left Content - Form */}
-            <div>
-              <div className="mb-8">
-                <Badge className="bg-red-100 text-red-700 hover:bg-red-200 mb-4">Orçamento</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Solicite seu Orçamento</h2>
-                <p className="text-lg text-gray-600">
-                  Preencha o formulário abaixo e nossa equipe entrará em contato para fornecer um orçamento
-                  personalizado.
-                </p>
-              </div>
-
-              <Card className="border-0 shadow-xl">
-                <CardContent className="p-6">
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label htmlFor="nome" className="text-sm font-medium text-gray-700">
-                          Nome Completo
-                        </label>
-                        <input
-                          type="text"
-                          id="nome"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                          placeholder="Seu nome"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                          E-mail
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                          placeholder="seu@email.com"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label htmlFor="telefone" className="text-sm font-medium text-gray-700">
-                          Telefone
-                        </label>
-                        <input
-                          type="tel"
-                          id="telefone"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                          placeholder="(11) 99999-9999"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="modelo" className="text-sm font-medium text-gray-700">
-                          Modelo do Transdutor
-                        </label>
-                        <input
-                          type="text"
-                          id="modelo"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                          placeholder="Ex: GE 4C-RS"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="servico" className="text-sm font-medium text-gray-700">
-                        Tipo de Serviço
-                      </label>
-                      <select
-                        id="servico"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        required
-                      >
-                        <option value="">Selecione um serviço</option>
-                        <option value="manutencao-preventiva">Manutenção Preventiva</option>
-                        <option value="manutencao-corretiva">Manutenção Corretiva</option>
-                        <option value="transdutor-transesofagico">Manutenção de Transdutor Transesofágico</option>
-                        <option value="contrato-manutencao">Contrato de Manutenção Periódica</option>
-                        <option value="outro">Outro</option>
-                      </select>
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="mensagem" className="text-sm font-medium text-gray-700">
-                        Mensagem
-                      </label>
-                      <textarea
-                        id="mensagem"
-                        rows={4}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                        placeholder="Descreva o problema ou necessidade em detalhes"
-                      ></textarea>
-                    </div>
-
-                    <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-4 text-lg">
-                      Enviar Solicitação
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Right Content - Contact Info */}
-            <div>
-              <div className="mb-8">
-                <Badge className="bg-red-100 text-red-700 hover:bg-red-200 mb-4">Contato</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">COMO CHEGAR?</h2>
-                <p className="text-lg text-gray-600">
-                  Entre em contato conosco ou visite nossa sede para conhecer nossos serviços
-                </p>
-              </div>
-
-              <div className="space-y-8">
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <MapPin className="h-6 w-6 text-red-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-bold text-lg mb-2">Endereço</h3>
-                        <p className="text-gray-700">Av. Martim Francisco, 518</p>
-                        <p className="text-gray-700">Alto de Santo André - CEP 09.230-700</p>
-                        <p className="text-gray-700">Santo André - SP</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <Phone className="h-6 w-6 text-red-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-bold text-lg mb-2">Telefone</h3>
-                        <p className="text-gray-700">(11) 91743-3834</p>
-                        <p className="text-gray-700">(11) 91031-4010</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <Mail className="h-6 w-6 text-red-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-bold text-lg mb-2">E-mail</h3>
-                        <p className="text-gray-700">ultrassomcenter@gmail.com</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <Clock className="h-6 w-6 text-red-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-bold text-lg mb-2">Horário de Atendimento</h3>
-                        <p className="text-gray-700">Segunda a Sexta: 8h às 18h</p>
-                        <p className="text-gray-700">Sábado: 8h às 12h</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="mt-8">
-                <a href="https://wa.me/5511917433834" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white py-4 text-lg flex items-center justify-center gap-2">
-                    <span>Fale Conosco pelo WhatsApp</span>
-                    <span className="text-xl">📱</span>
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+  
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white">
         <div className="container mx-auto px-4 text-center max-w-7xl">
@@ -597,15 +394,7 @@ export default function ManutencaoTransdutorPage() {
                 Solicitar Orçamento
               </Button>
             </a>
-            <a href="tel:1191743-3834">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-semibold px-8"
-              >
-                (11) 91743-3834
-              </Button>
-            </a>
+          
           </div>
         </div>
       </section>
