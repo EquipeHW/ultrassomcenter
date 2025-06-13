@@ -32,7 +32,7 @@ export default function HomePage() {
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                   ESCOLHA A<br />
-                  <span className="text-red-200">SOLUÇÃO</span> QUE
+                  <span className="text-red-500">SOLUÇÃO</span> QUE
                   <br />
                   VOCÊ DESEJA
                 </h1>
@@ -72,8 +72,8 @@ export default function HomePage() {
 
             {/* Right Content - Enhanced Service Card */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-sm">
-                <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 overflow-hidden">
+              <div className="w-full max-w-lg ">
+                <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 overflow-hidden opacity-90">
                   <CardContent className="p-0">
                     {/* Card Header */}
                     <div className="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white text-center">
@@ -278,15 +278,7 @@ export default function HomePage() {
                 Fale Conosco
               </Button>
             </Link>
-            <Link href="tel:1191743-3834">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-medium px-8"
-              >
-                (11) 91743-3834
-              </Button>
-            </Link>
+           
           </div>
         </div>
       </section>
