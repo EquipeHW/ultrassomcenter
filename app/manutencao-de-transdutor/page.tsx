@@ -24,7 +24,7 @@ export default function ManutencaoTransdutorPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/20 rounded-full blur-3xl -translate-y-48 translate-x-48"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-red-400/30 rounded-full blur-2xl translate-y-32 -translate-x-32"></div>
 
-        <div className="container mx-auto px-4 py-16 relative z-10 max-w-7xl">
+        <div className="container mx-auto px-4 py-2 relative z-10 max-w-7xl">
           <div className="max-w-2xl">
             {/* Content */}
             <div className="text-white space-y-8">
