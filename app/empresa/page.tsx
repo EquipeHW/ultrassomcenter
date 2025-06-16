@@ -60,7 +60,7 @@ export default function EmpresaPage() {
                   src="/sobre.png"
                   alt="Profissional utilizando equipamento de ultrassom"
                   fill
-                  className="object-cover opacity-75"
+                  className="object-cover"
                   priority
                 />
               </div>

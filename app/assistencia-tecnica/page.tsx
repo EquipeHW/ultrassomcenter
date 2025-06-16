@@ -17,7 +17,7 @@ export default function AssistenciaTecnicaPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
                 Assistência
                 <br />
-                Técnica
+                Técnica para Ultrassom
               </h1>
 
               <div className="space-y-4 mb-8 text-red-100">
@@ -48,7 +48,7 @@ export default function AssistenciaTecnicaPage() {
                   src="/assistencia.png"
                   alt="Manutenção de equipamentos de ultrassom"
                   fill
-                  className="object-cover opacity-75"
+                  className="object-cover"
                   priority
                 />
               </div>

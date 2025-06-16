@@ -59,7 +59,7 @@ export default function LocacaoPage() {
                   src="/locacao1.png"
                   alt="Médico utilizando equipamento de ultrassom"
                   fill
-                  className="object-cover opacity-70"
+                  className="object-cover"
                   priority
                 />
               </div>
