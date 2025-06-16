@@ -394,7 +394,7 @@ export default function ManutencaoTransdutorPage() {
 
   
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white">
+      <section className="py-16 bg-gradient-to-b  from-red-100 via-red-400 via-red-500 to-red-800 text-white">
         <div className="container mx-auto px-4 text-center max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Seu Transdutor Merece o Melhor Cuidado</h2>
           <p className="text-xl mb-8 text-red-100 max-w-2xl mx-auto">

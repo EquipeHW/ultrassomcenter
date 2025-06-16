@@ -9,7 +9,7 @@ export default function EmpresaPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 py-16">
+      <section className="relative bg-gradient-to-br  from-red-100 via-red-400 to-red-800 py-16">
         <div className="container mx-auto px-4 relative z-10 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
@@ -60,7 +60,7 @@ export default function EmpresaPage() {
                   src="/sobre.png"
                   alt="Profissional utilizando equipamento de ultrassom"
                   fill
-                  className="object-cover"
+                  className="object-cover opacity-75"
                   priority
                 />
               </div>
@@ -215,7 +215,7 @@ export default function EmpresaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
+      <section className="py-16 bg-gradient-to-b  from-red-100 via-red-400 via-red-500 to-red-800 text-white">
         <div className="container mx-auto px-4 text-center max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para ser nosso cliente?</h2>
           <p className="text-xl mb-8 text-red-100 max-w-2xl mx-auto">

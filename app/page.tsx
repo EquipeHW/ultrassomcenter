@@ -247,7 +247,7 @@ export default function HomePage() {
                 key={index}
                 className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden"
               >
-                <CardContent className="p-0">
+                <CardContent className="p-0 text-center">
                   <div className={`bg-gradient-to-r ${service.color} p-6 text-white`}>
                     <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
@@ -270,7 +270,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-red-600 text-white">
+      <section className="py-16 bg-gradient-to-b  from-red-100 via-red-400 via-red-500 to-red-800 text-white">
         <div className="container mx-auto px-4 text-center max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Precisa de Equipamentos de Ultrassom?</h2>
           <p className="text-xl mb-8 text-red-100">
