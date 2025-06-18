@@ -79,7 +79,7 @@ export default function LocacaoPage() {
           </div>
 
           <Tabs defaultValue="toshiba" className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-5 gap-2 mb-8">
+            <TabsList className="grid grid-cols-2 md:grid-cols-6 gap-2 mb-8">
               <TabsTrigger value="toshiba" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
                 Toshiba
               </TabsTrigger>
@@ -94,6 +94,9 @@ export default function LocacaoPage() {
               </TabsTrigger>
               <TabsTrigger value="samsung" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
                 Samsung
+              </TabsTrigger>
+              <TabsTrigger value="acuson" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
+                Siemens/Acuson
               </TabsTrigger>
             </TabsList>
 
@@ -115,6 +118,11 @@ export default function LocacaoPage() {
                     name: "Toshiba Nemio MX",
                     image: "/equipamentos/toshibanemiomx.png",
                     features: ["Compacto e portátil", "Fácil operação", "Ótimo custo-benefício"],
+                  },
+                  {
+                    name: "Toshiba Xario 200",
+                    image: "/equipamentos/toshiba_xario200.jpg",
+                    features: ["Alta performance", "Imagens de alta definição", "Tecnologia avançada"],
                   },
                 ].map((equipment, index) => (
                   <EquipmentCard key={index} equipment={equipment} />
@@ -230,6 +238,21 @@ export default function LocacaoPage() {
                     name: "Samsung R7",
                     image: "/equipamentos/samsungr7.png",
                     features: ["Tecnologia de ponta", "Imagens cristalinas", "Múltiplas aplicações clínicas"],
+                  },
+                ].map((equipment, index) => (
+                  <EquipmentCard key={index} equipment={equipment} />
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* Siemens/Acuson Equipment */}
+            <TabsContent value="acuson">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                  {
+                    name: "Acuson NX3 Ultrasound",
+                    image: "/equipamentos/ACUSON_NX3_.jpg",
+                    features: ["Imagens de alta resolução", "Interface intuitiva", "Tecnologia Siemens de ponta"],
                   },
                 ].map((equipment, index) => (
                   <EquipmentCard key={index} equipment={equipment} />
