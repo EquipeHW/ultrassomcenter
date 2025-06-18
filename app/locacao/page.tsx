@@ -124,6 +124,11 @@ export default function LocacaoPage() {
                     image: "/equipamentos/toshiba_xario200.jpg",
                     features: ["Alta performance", "Imagens de alta definição", "Tecnologia avançada"],
                   },
+                  {
+                    name: "Toshiba Aplio 300",
+                    image: "/equipamentos/aplio300.jpg",
+                    features: ["Imagens de alta resolução", "Tecnologia de ponta", "Versatilidade clínica"],
+                  },
                 ].map((equipment, index) => (
                   <EquipmentCard key={index} equipment={equipment} />
                 ))}
