@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react"
 
 interface Equipment {
   name: string;
@@ -12,6 +15,16 @@ interface Equipment {
 }
 
 export default function LocacaoPage() {
+  const [selectedTab, setSelectedTab] = useState("toshiba");
+  const brands = [
+    { value: "toshiba", label: "Toshiba" },
+    { value: "ge", label: "GE" },
+    { value: "philips", label: "Philips" },
+    { value: "medison", label: "Medison" },
+    { value: "samsung", label: "Samsung" },
+    { value: "acuson", label: "Siemens/Acuson" },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -78,26 +91,26 @@ export default function LocacaoPage() {
             </p>
           </div>
 
-          <Tabs defaultValue="toshiba" className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-6 gap-2 mb-8">
-              <TabsTrigger value="toshiba" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                Toshiba
-              </TabsTrigger>
-              <TabsTrigger value="ge" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                GE
-              </TabsTrigger>
-              <TabsTrigger value="philips" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                Philips
-              </TabsTrigger>
-              <TabsTrigger value="medison" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                Medison
-              </TabsTrigger>
-              <TabsTrigger value="samsung" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                Samsung
-              </TabsTrigger>
-              <TabsTrigger value="acuson" className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
-                Siemens/Acuson
-              </TabsTrigger>
+          <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
+            {/* Select para mobile */}
+            <div className="block md:hidden mb-8">
+              <select
+                className="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400"
+                value={selectedTab}
+                onChange={e => setSelectedTab(e.target.value)}
+              >
+                {brands.map(brand => (
+                  <option key={brand.value} value={brand.value}>{brand.label}</option>
+                ))}
+              </select>
+            </div>
+            {/* Tabs para desktop/tablet */}
+            <TabsList className="hidden md:grid md:grid-cols-6 gap-2 mb-8">
+              {brands.map(brand => (
+                <TabsTrigger key={brand.value} value={brand.value} className="data-[state=active]:bg-red-600 data-[state=active]:text-white">
+                  {brand.label}
+                </TabsTrigger>
+              ))}
             </TabsList>
 
             {/* Toshiba Equipment */}
