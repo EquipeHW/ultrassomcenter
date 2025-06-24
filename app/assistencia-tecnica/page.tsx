@@ -167,7 +167,7 @@ export default function AssistenciaTecnicaPage() {
             {/* Left Content - Image */}
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/assistencia2.png" alt="Teste de Controle de Qualidade" fill className="object-cover" />
+                <Image src="/fantoma.jpeg" alt="Teste de Controle de Qualidade" fill className="object-cover" />
               </div>
             </div>
 
@@ -294,7 +294,7 @@ export default function AssistenciaTecnicaPage() {
             <div className="relative">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/manutencaopreventiva.jpg"
+                  src="/limpezaultrassom.jpg"
                   alt="Manutenção Preventiva Especializada"
                   fill
                   className="object-cover"
