@@ -1,0 +1,13 @@
+# .htaccess para Next.js estático/SPA na Hostinger
+
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Se for arquivo ou diretório real, serve normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Fallback: se não existir arquivo/diretório, serve index.html da raiz (SPA)
+RewriteRule ^ index.html [L] 
