@@ -55,7 +55,6 @@ export default function LocacaoPage() {
                 href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-gtm="whatsapp-cta"
               >
                 <Button
                   size="lg"
@@ -391,7 +390,6 @@ export default function LocacaoPage() {
               href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
-              data-gtm="whatsapp-cta"
             >
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-8">
                 Solicitar Orçamento
@@ -430,7 +428,6 @@ function EquipmentCard({ equipment }: { equipment: Equipment }) {
           href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
-          data-gtm="whatsapp-cta"
         >
           <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Solicite seu orçamento</Button>
         </a>

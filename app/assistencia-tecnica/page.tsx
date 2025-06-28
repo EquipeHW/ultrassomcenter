@@ -31,7 +31,6 @@ export default function AssistenciaTecnicaPage() {
                 href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-gtm="whatsapp-cta"
               >
                 <Button
                   size="lg"
@@ -151,7 +150,6 @@ export default function AssistenciaTecnicaPage() {
                     href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    data-gtm="whatsapp-cta"
                   >
                     <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
                   </a>
@@ -217,7 +215,6 @@ export default function AssistenciaTecnicaPage() {
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-gtm="whatsapp-cta"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
                 </a>
@@ -273,7 +270,6 @@ export default function AssistenciaTecnicaPage() {
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-gtm="whatsapp-cta"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
                 </a>
@@ -349,7 +345,6 @@ export default function AssistenciaTecnicaPage() {
                   href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-gtm="whatsapp-cta"
                 >
                   <Button className="bg-red-600 hover:bg-red-700 text-white">Solicite seu orçamento</Button>
                 </a>
@@ -386,7 +381,6 @@ export default function AssistenciaTecnicaPage() {
               href="https://api.whatsapp.com/send/?phone=%2B5511917433834&text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+saber+mais+sobre+a+ultrassom.+&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
-              data-gtm="whatsapp-cta"
             >
               <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-8">
                 Entre em Contato
